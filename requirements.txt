@@ -1,0 +1,5 @@
+requests
+Flask
+Flask-Login
+Flask-Mail
+gunicorn
