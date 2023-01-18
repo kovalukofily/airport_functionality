@@ -160,7 +160,7 @@ def ground_done():
         session_worker = None
     print("Session Worker", session_worker)
     print("Passenger Status", passenger.status)
-    if passenger.status not in (1, 2) or not flight_to_jfk.aboard:
+    if passenger.status not in (1, 2, 3) or not flight_to_jfk.aboard:
         return render_template("failure.html")
     ground_work.send_to_flight(luggage)
     print("Passenger Status", passenger.status)
